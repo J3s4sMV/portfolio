@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Moreno Velasco - Portfolio</title>
+    <link rel="stylesheet" href="portfolio-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">JMV</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Jesús Moreno Velasco</h1>
+            <p>Ingeniero en Sistemas Computacionales | Desarrollador Java Senior</p>
+            <p>8+ años transformando ideas en soluciones de software</p>
+            <a href="#contact" class="cta-button">¡Trabajemos Juntos!</a>
+            
+            <div class="download-section">
+                <a href="#" class="download-btn" onclick="downloadCV('spanish')">📄 Descargar CV (Español)</a>
+                <a href="#" class="download-btn" onclick="downloadCV('english')">📄 Download Resume (English)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Acerca de Mí</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    👨‍💻
+                </div>
+                <div>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        Soy un Ingeniero en Sistemas Computacionales apasionado por el desarrollo de software con más de 8 años de experiencia especializándome en tecnologías Java. Mi carrera ha estado enfocada en crear soluciones robustas y escalables para diversas industrias.
+                    </p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        He liderado equipos de desarrollo, implementado arquitecturas de microservicios, y trabajado en proyectos de migración complejos. Mi experiencia abarca desde aplicaciones web hasta sistemas de procesamiento de datos a gran escala.
+                    </p>
+                    <p style="font-size: 1.1rem;">
+                        <strong>Especialidades:</strong> Desarrollo Full-Stack, APIs REST, Arquitectura de Software, Liderazgo Técnico, DevOps, y Migración de Sistemas Legacy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🔧 Lenguajes & Frameworks</h3>
+                    <div class="skill-item">
+                        <span>Java (8, 11, 17)</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Spring Boot/Framework</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript/Node.js</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>☁️ Cloud & DevOps</h3>
+                    <div class="skill-item">
+                        <span>AWS Lambda</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Docker/Kubernetes</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Jenkins CI/CD</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Google Cloud Platform</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🗄️ Bases de Datos</h3>
+                    <div class="skill-item">
+                        <span>Microsoft SQL Server</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MongoDB</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Redis</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>⚙️ Herramientas & Metodologías</h3>
+                    <div class="skill-item">
+                        <span>Git/GitHub</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JIRA/Scrum</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SonarQube</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Maven/Gradle</span>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🚀</div>
+                    <div class="project-content">
+                        <h3>Sistema de Migración COBOL a Java</h3>
+                        <p>Lideré la migración de sistemas legacy COBOL a aplicaciones Java modernas, reduciendo costos de mantenimiento en 60% y mejorando el rendimiento.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java 17</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">COBOL</span>
+                            <span class="tag">Migration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🌐</div>
+                    <div class="project-content">
+                        <h3>API Gateway para Industria de Viajes</h3>
+                        <p>Desarrollé un API Gateway que integra múltiples servicios de viajes incluyendo SABRE API, procesando más de 10,000 transacciones diarias.</p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Cloud</span>
+                            <span class="tag">Microservices</span>
+                            <span class="tag">SABRE API</span>
+                            <span class="tag">REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3>Plataforma ETL para Big Data</h3>
+                        <p>Diseñé y desarrollé una plataforma ETL que procesa terabytes de datos diarios para múltiples clientes, con alta disponibilidad y escalabilidad.</p>
+                        <div class="project-tags">
+                            <span class="tag">Apache Spark</span>
+                            <span class="tag">Kafka</span>
+                            <span class="tag">BigQuery</span>
+                            <span class="tag">ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🏦</div>
+                    <div class="project-content">
+                        <h3>Sistema de Cobranza Automatizada</h3>
+                        <p>Implementé un sistema automatizado de cobranza que mejoró la eficiencia de recuperación de cartera en 45% usando algoritmos de machine learning.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <div class="project-content">
+                        <h3>API REST para Aplicaciones Móviles</h3>
+                        <p>Desarrollé APIs REST escalables para aplicaciones móviles con más de 50,000 usuarios activos, implementando autenticación JWT y rate limiting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Mobile API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">🔄</div>
+                    <div class="project-content">
+                        <h3>Pipeline de CI/CD Empresarial</h3>
+                        <p>Establecí pipelines de CI/CD que redujeron el tiempo de despliegue de 4 horas a 15 minutos, incluyendo pruebas automatizadas y análisis de código.</p>
+                        <div class="project-tags">
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Developer - Softtek</h3>
+                        <p><strong>Mayo 2022 - Presente</strong></p>
+                        <p>Especialista en migración de sistemas COBOL a Java, desarrollo de APIs REST, y integración con servicios de terceros como SABRE API.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Backend Developer - FonYou</h3>
+                        <p><strong>Diciembre 2021 - Mayo 2022</strong></p>
+                        <p>Desarrollo y mantenimiento de APIs para aplicaciones móviles, gestión de pipelines CI/CD y monitoreo de aplicaciones.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Database and Operations Leader - Ike Asistencia</h3>
+                        <p><strong>Mayo 2017 - Diciembre 2021</strong></p>
+                        <p>Lideré equipo de 5 desarrolladores, implementé procesos ETL para múltiples clientes, y desarrollé aplicaciones web empresariales.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Java EE Developer - KODE IT</h3>
+                        <p><strong>Enero 2017 - Mayo 2017</strong></p>
+                        <p>Desarrollo de aplicaciones web usando Java EE, implementación de servicios web SOAP y optimización de bases de datos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Developer - Ennovasoft</h3>
+                        <p><strong>Enero 2015 - Diciembre 2016</strong></p>
+                        <p>Desarrollo de aplicaciones web y de escritorio, configuración de servidores de aplicaciones y soporte en producción.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            jesusmv.024@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">📱</span>
+                        <div>
+                            <strong>Teléfono</strong><br>
+                            +52 96-31-86-20-45
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">🔗</span>
+                        <div>
+                            <strong>LinkedIn</strong><br>
+                            <a href="#" style="color: #2c5aa0;">linkedin.com/in/jesus-moreno-velasco</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span style="font-size: 1.5rem;">📍</span>
+                        <div>
+                            <strong>Ubicación</strong><br>
+                            Ciudad de México, México
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jesús Moreno Velasco. Todos los derechos reservados.</p>
+            <p>Desarrollador Java Senior | Especialista en Arquitectura de Software</p>
+        </div>
+    </footer>
+
+    <script src="portfolio-scripts.js"></script>
+</body>
+</html>
